@@ -4,51 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700&family=Playfair+Display:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css/style.css">
 
-    <title>Barbershop</title>
 </head>
 <body>
     <!-- Header -->
-<header>
-<nav>
-        <a href="./">
-            <img src="./images/header/Logo.svg" alt="logo" width="60" height="60">
+<header class="header">
+    <nav class="main-nav">
+        <a class="logo" href="./" >
+            <img class="logo-img" src="./images/header/Logo.svg" alt="logo" width="60" height="60">
         </a>
-    <ul>
-        <li>
-            <a href="">About us</a>
+        <ul class="menu">
+            <li class="menu-item">
+                <a class="menu-link" href="">About Us</a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link" href="">Our Masters</a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link" href="">Portfolio</a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link" href="">Testimonials</a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link" href="">Contacts</a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="head-contacts">
+        <li class="map-item">
+            <a class="map-link" href="">302 W 50th St, NY, NY 10019</a>
+        <!-- <img src="./images/header/map.svg" alt="adress" width="36" height="36"> -->
         </li>
         <li>
-            <a href="">Our masters</a>
-        </li>
-        <li>
-            <a href="">Portfolio</a>
-        </li>
-        <li>
-            <a href="">Testimonials</a>
-        </li>
-        <li>
-            <a href="">Contacts</a>
-        </li>
+        <a class="tel-link" href="tel: 0123456789">0123456789</a>
+        <p class="timetable">Daily from 9 to 20</p>
+    </li>
     </ul>
-</nav>
-<address>
-    <a href="">302 W 50th St, NY, NY 10019</a>
-    <img src="./images/header/map.svg" alt="adress" width="36" height="36">
-    <ul>
-        <li>
-            <a href="tel: 0123456789">0123456789</a>
-        </li>
-        <li>
-            <p>Daily from 9 to 20</p>
-        </li>
-    </ul>
-    <img src="./images/header/phone.svg" alt="phone" width="36" height="36">
-</address>
-    
 </header>
 
 <main>
@@ -177,42 +179,51 @@
             <li>
                 <img src="./images/our_price/5.jpg" alt="Haircuts" width="280" height="283">
                 <h3>Haircuts</h3>
-                <p><span>Regular Haircut</span> <span>60 min $20</span></p>
-                <p><span>Haircut + Shave</span> <span>60 min $19</span></p>
-                <p><span>Haircut + Beard Trim</span> <span>60 min $30</span></p>
-                <p><span>Beard Trim</span> <span>60 min $20</span></p>
-                <p><span>Hair Tatoo</span> <span>60 min $45</span></p>
-                <p><span>Facial</span> <span>60 min $15</span></p>
+                <ul>
+                    <li><span>Regular Haircut</span> <span>60 min $20</span></li>
+                    <li><span>Haircut + Shave</span> <span>60 min $19</span></li>
+                    <li><span>Haircut + Beard Trim</span> <span>60 min $30</span></li>
+                    <li><span>Beard Trim</span> <span>60 min $20</span></li>
+                    <li><span>Hair Tatoo</span> <span>60 min $45</span></li>
+                    <li><span>Facial</span> <span>60 min $15</span></li>
+                </ul>
             </li>
             <li>
                 <img src="./images/our_price/6.jpg" alt="Beard & Mo" width="280" height="283">
                 <h3>Beard & Mo</h3>
                 <p><span>Regular Haircut</span> <span>60 min $20</span></p>
-                <p><span>Haircut + Shave</span> <span>60 min $19</span></p>
-                <p><span>Haircut + Beard Trim</span> <span>60 min $30</span></p>
-                <p><span>Beard Trim</span> <span>60 min $20</span></p>
-                <p><span>Hair Tatoo</span> <span>60 min $45</span></p>
-                <p><span>Facial</span> <span>60 min $15</span></p>
+<ul>
+    <li><span>Regular Haircut</span> <span>60 min $20</span></li>
+    <li><span>Haircut + Shave</span> <span>60 min $19</span></li>
+    <li><span>Haircut + Beard Trim</span> <span>60 min $30</span></li>
+    <li><span>Beard Trim</span> <span>60 min $20</span></li>
+    <li><span>Hair Tatoo</span> <span>60 min $45</span></li>
+    <li><span>Facial</span> <span>60 min $15</span></li>
+</ul>
             </li>
             <li>
                 <img src="./images/our_price/7.jpg" alt="Shaving" width="280" height="283">
                 <h3>Shaving</h3>
-                <p><span>Regular Haircut</span> <span>60 min $20</span></p>
-                <p><span>Haircut + Shave</span> <span>60 min $19</span></p>
-                <p><span>Haircut + Beard Trim</span> <span>60 min $30</span></p>
-                <p><span>Beard Trim</span> <span>60 min $20</span></p>
-                <p><span>Hair Tatoo</span> <span>60 min $45</span></p>
-                <p><span>Facial</span> <span>60 min $15</span></p>
+<ul>
+    <li><span>Regular Haircut</span> <span>60 min $20</span></li>
+    <li><span>Haircut + Shave</span> <span>60 min $19</span></li>
+    <li><span>Haircut + Beard Trim</span> <span>60 min $30</span></li>
+    <li><span>Beard Trim</span> <span>60 min $20</span></li>
+    <li><span>Hair Tatoo</span> <span>60 min $45</span></li>
+    <li><span>Facial</span> <span>60 min $15</span></li>
+</ul>
             </li>
             <li>
                 <img src="./images/our_price/8.jpg" alt="Waxing" width="280" height="283">
                 <h3>Waxing</h3>
-                <p><span>Regular Haircut</span> <span>60 min $20</span></p>
-                <p><span>Haircut + Shave</span> <span>60 min $19</span></p>
-                <p><span>Haircut + Beard Trim</span> <span>60 min $30</span></p>
-                <p><span>Beard Trim</span> <span>60 min $20</span></p>
-                <p><span>Hair Tatoo</span> <span>60 min $45</span></p>
-                <p><span>Facial</span> <span>60 min $15</span></p>
+<ul>
+    <li><span>Regular Haircut</span> <span>60 min $20</span></li>
+    <li><span>Haircut + Shave</span> <span>60 min $19</span></li>
+    <li><span>Haircut + Beard Trim</span> <span>60 min $30</span></li>
+    <li><span>Beard Trim</span> <span>60 min $20</span></li>
+    <li><span>Hair Tatoo</span> <span>60 min $45</span></li>
+    <li><span>Facial</span> <span>60 min $15</span></li>
+</ul>
             </li>
         </ul>
     </section>
@@ -246,8 +257,6 @@
     </address>
         <img src="./images/footer/clock.svg" alt="clock" width="54" height="54">
         <p>Daily from 9 to 20</p>
-
-    
 
 </footer>
 </body>

@@ -1,0 +1,46 @@
+.header {
+}
+
+.main-nav {
+}
+
+.logo {
+}
+
+.menu-link {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.33;
+  /* letter-spacing: 0.1; */
+  /* color: #efe7e2; */
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: #e77509;
+}
+
+.map-link {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.33;
+  /* letter-spacing: 0.1; */
+  /* color: #efe7e2; */
+}
+
+.tel-link {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.52;
+}
+
+.timetable {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.33;
+}
