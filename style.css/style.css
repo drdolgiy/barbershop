@@ -1,3 +1,13 @@
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* ---- Header ----- */
+
 .header {
 }
 
@@ -19,7 +29,7 @@
 
 .menu-link:hover,
 .menu-link:focus {
-  color: #e77509;
+  color: #ff6e40;
 }
 
 .map-link {
@@ -43,4 +53,55 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.33;
+}
+
+/* ----- Hero ------- */
+.hero {
+}
+
+.hero-item {
+}
+
+.main-title {
+  /* color: var(--neutral-1, #FFF); */
+  font-family: Playfair Display, serif;
+  font-size: 70px;
+  font-weight: 900;
+  line-height: 1, 1;
+}
+
+.desc {
+  /* color: #EFE7E2; */
+  font-family: Fira Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.hero-btn {
+  /* color: var(--neutral-1, #fff); */
+  text-align: center;
+  font-family: Playfair Display, serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1, 52;
+}
+
+/* ---- Benefits ----- */
+.benefits-section {
+}
+
+.benefits-section-list-item {
+}
+
+.benefits-img {
+}
+
+.hero-btn {
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #ff6e40;
+  color: #fff;
 }
