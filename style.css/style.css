@@ -1,3 +1,10 @@
+:root {
+  --main-color: #efe7e2;
+  --second-color: #b7aaa2;
+  --accent-color: #ff6e40;
+  --neutral-color: #fff;
+}
+
 body {
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
@@ -33,7 +40,7 @@ body {
 
 .menu-link:hover,
 .menu-link:focus {
-  color: #ff6e40;
+  color: var(--accent-color);
 }
 
 .map-link {
@@ -71,7 +78,7 @@ body {
   font-family: Playfair Display, serif;
   font-size: 70px;
   font-weight: 900;
-  line-height: 1, 1;
+  line-height: 1.1;
 }
 
 .desc {
@@ -88,24 +95,130 @@ body {
   font-family: Playfair Display, serif;
   font-size: 20px;
   font-weight: 700;
-  line-height: 1, 52;
+  line-height: 1.52;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--neutral-color);
 }
 
 /* ---- Benefits ----- */
-.benefits-section {
-}
+
+/* .benefits-section {
+  display: flex;
+} */
 
 .benefits-section-list-item {
 }
 
 .benefits-img {
 }
-
-.hero-btn {
+.benefits-item-head {
+  color: var (--main-color);
+  /* text-align: center; */
+  /* font-family: Fira Sans; */
+  font-size: 24px;
+  /* font-style: normal; */
+  font-weight: 600;
+  line-height: 1.35; /* 32.4px */
 }
 
-.hero-btn:hover,
-.hero-btn:focus {
-  background-color: #ff6e40;
-  color: #fff;
+.benefits-item-desc {
+  color: var(--second-color);
+  /* text-align: center; */
+  /* font-family: Fira Sans; */
+  font-size: 16px;
+  /* font-style: normal; */
+  /* font-weight: 400; */
+  line-height: 1.5; /* 24px */
+}
+
+/* --- About us --- */
+.about-us-section {
+}
+
+.about-us-section-title {
+  /* color: var(--neutral-color); */
+  color: var(--main-color);
+  /* text-align: center; */
+  /* font-family: Fira Sans; */
+  font-size: 48px;
+  /* font-style: normal; */
+  font-weight: 700;
+  line-height: 1.25; /* 60px */
+}
+
+.about-us-section-desc {
+  color: var(--main-color);
+  /* text-align: center; */
+  /* font-family: Fira Sans; */
+  font-size: 15px;
+  /* font-style: normal; */
+  /* font-weight: 400; */
+  line-height: 1.6; /* 24px */
+}
+
+.gallery-btn {
+  /* color: var(--main-color); */
+  /* background-color: var(--accent-color); */
+  /* text-align: center; */
+  font-family: Playfair Display;
+  font-size: 20px;
+  /* font-style: normal; */
+  font-weight: 700;
+  line-height: 1.52; /* 30.4px */
+}
+
+.gallery-btn:hover,
+.gallery-btn:focus {
+  color: var(--neutral-color);
+  background-color: var(--accent-color);
+}
+
+.gallery-btn-instagram {
+  /* color: var(--main-color); */
+  /* background-color: var(--accent-color); */
+  /* text-align: center; */
+  font-family: Playfair Display;
+  font-size: 20px;
+  /* font-style: normal; */
+  font-weight: 700;
+  line-height: 1.52; /* 30.4px */
+}
+
+.gallery-btn-instagram:hover,
+.gallery-btn-instagram:focus {
+  color: var(--neutral-color);
+  background-color: var(--accent-color);
+}
+
+/* --- Testimonials --- */
+.testimonials-section {
+}
+
+.testimonials-section-header {
+  color: var(--neutral-color);
+  /* text-align: center; */
+  /* font-family: Fira Sans; */
+  font-size: 48px;
+  /* font-style: normal; */
+  font-weight: 700;
+  line-height: 1.25; /* 60px */
+}
+
+.testimonials-section-desc {
+  color: var(--main-color);
+  /* text-align: center; */
+  /* font-family: Fira Sans; */
+  font-size: 15px;
+  /* font-style: normal; */
+  /* font-weight: 400; */
+  line-height: 1.6; /* 24px */
+}
+
+.testimonials-section-list {
+}
+.testimonials-section-list-item {
 }
