@@ -1,3 +1,8 @@
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+}
+
 .link {
   text-decoration: none;
 }
@@ -18,9 +23,8 @@
 }
 
 .menu-link {
-  font-family: "Fira Sans", sans-serif;
   font-size: 15px;
-  font-weight: 400;
+
   line-height: 1.33;
   /* letter-spacing: 0.1; */
   /* color: #efe7e2; */
@@ -33,25 +37,25 @@
 }
 
 .map-link {
-  font-family: "Fira Sans", sans-serif;
+  /* font-family: "Fira Sans", sans-serif; */
   font-size: 14px;
-  font-weight: 400;
+  /* font-weight: 400; */
   line-height: 1.33;
   /* letter-spacing: 0.1; */
   /* color: #efe7e2; */
 }
 
 .tel-link {
-  font-family: "Fira Sans", sans-serif;
+  /* font-family: "Fira Sans", sans-serif; */
   font-size: 18px;
-  font-weight: 400;
+  /* font-weight: 400; */
   line-height: 1.52;
 }
 
 .timetable {
-  font-family: "Fira Sans", sans-serif;
+  /* font-family: "Fira Sans", sans-serif; */
   font-size: 14px;
-  font-weight: 400;
+  /* font-weight: 400; */
   line-height: 1.33;
 }
 
