@@ -3,11 +3,29 @@
   --second-color: #b7aaa2;
   --accent-color: #ff6e40;
   --neutral-color: #fff;
+  --neutral-color-two: #000;
 }
 
-body {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 400;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
 }
 
 .link {
@@ -18,15 +36,45 @@ body {
   list-style: none;
 }
 
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 10px 0 10px;
+
+  margin: 0 auto;
+}
+
 /* ---- Header ----- */
+.header-container {
+  display: flex;
+  align-items: center;
+}
 
 .header {
+  /* display: flex; */
+  padding: 35px 0 35px 0;
 }
 
 .main-nav {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
+  margin-right: 70px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .menu-link {
@@ -43,6 +91,15 @@ body {
   color: var(--accent-color);
 }
 
+.header-contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.map-item {
+}
+
 .map-link {
   /* font-family: "Fira Sans", sans-serif; */
   font-size: 14px;
@@ -50,6 +107,7 @@ body {
   line-height: 1.33;
   /* letter-spacing: 0.1; */
   /* color: #efe7e2; */
+  margin-right: 92px;
 }
 
 .tel-link {
@@ -117,7 +175,7 @@ body {
 }
 .benefits-item-head {
   color: var (--main-color);
-  /* text-align: center; */
+  text-align: center;
   /* font-family: Fira Sans; */
   font-size: 24px;
   /* font-style: normal; */
@@ -127,7 +185,7 @@ body {
 
 .benefits-item-desc {
   color: var(--second-color);
-  /* text-align: center; */
+  text-align: center;
   /* font-family: Fira Sans; */
   font-size: 16px;
   /* font-style: normal; */
@@ -142,7 +200,7 @@ body {
 .about-us-section-title {
   /* color: var(--neutral-color); */
   color: var(--main-color);
-  /* text-align: center; */
+  text-align: center;
   /* font-family: Fira Sans; */
   font-size: 48px;
   /* font-style: normal; */
@@ -152,7 +210,7 @@ body {
 
 .about-us-section-desc {
   color: var(--main-color);
-  /* text-align: center; */
+  text-align: center;
   /* font-family: Fira Sans; */
   font-size: 15px;
   /* font-style: normal; */
@@ -163,7 +221,7 @@ body {
 .gallery-btn {
   /* color: var(--main-color); */
   /* background-color: var(--accent-color); */
-  /* text-align: center; */
+  text-align: center;
   font-family: Playfair Display;
   font-size: 20px;
   /* font-style: normal; */
@@ -180,12 +238,14 @@ body {
 .gallery-btn-instagram {
   /* color: var(--main-color); */
   /* background-color: var(--accent-color); */
-  /* text-align: center; */
+  text-align: center;
   font-family: Playfair Display;
-  font-size: 20px;
+  font-size: 14px;
   /* font-style: normal; */
   font-weight: 700;
-  line-height: 1.52; /* 30.4px */
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  line-height: 1.5; /* 30.4px */
 }
 
 .gallery-btn-instagram:hover,
@@ -199,8 +259,8 @@ body {
 }
 
 .testimonials-section-header {
-  color: var(--neutral-color);
-  /* text-align: center; */
+  /* color: var(--neutral-color); */
+  text-align: center;
   /* font-family: Fira Sans; */
   font-size: 48px;
   /* font-style: normal; */
@@ -210,7 +270,7 @@ body {
 
 .testimonials-section-desc {
   color: var(--main-color);
-  /* text-align: center; */
+  text-align: center;
   /* font-family: Fira Sans; */
   font-size: 15px;
   /* font-style: normal; */
@@ -221,4 +281,136 @@ body {
 .testimonials-section-list {
 }
 .testimonials-section-list-item {
+}
+
+.testimonials-item-header {
+  color: var(--neutral-color);
+  /* font-family: Fira Sans; */
+  font-size: 14px;
+  /* font-style: normal; */
+  font-weight: 700;
+  line-height: 1.5; /* 21px */
+}
+
+.testimonials-item-desc {
+  /* color: var(--neutral-color); */
+  /* font-family: Fira Sans; */
+  font-size: 16px;
+  /* font-style: normal; */
+  /* font-weight: 400; */
+  line-height: 1.5; /* 24px */
+}
+
+.testimonials-item-full-desc {
+  color: var(--accent-color);
+  /* font-family: Fira Sans; */
+  font-size: 14px;
+  /* font-style: normal; */
+  /* font-weight: 400; */
+  line-height: 1.35; /* 18.9px */
+}
+
+/* --- Our price --- */
+.our-price-section {
+}
+
+.our-price-section-header {
+  color: var(--neutral);
+  text-align: center;
+  /* font-family: Fira Sans; */
+  font-size: 48px;
+  /* font-style: normal; */
+  font-weight: 700;
+  line-height: 1.25; /* 60px */
+}
+
+.our-price-section-desc {
+  color: var(--main-color);
+  text-align: center;
+  /* font-family: Fira Sans; */
+  font-size: 15px;
+  /* font-style: normal; */
+  /* font-weight: 400; */
+  line-height: 1.6; /* 24px */
+}
+
+.our-price-section-list {
+}
+
+.ur-price-section-list-item {
+}
+
+.our-price-section-img {
+}
+
+.price-list-head {
+  color: var(--main-color);
+  /* font-family: Fira Sans; */
+  font-size: 30px;
+  /* font-style: normal; */
+  font-weight: 500;
+  line-height: 1.33; /* 39.9px */
+}
+
+.price-list {
+}
+
+.price-list-item {
+  color: var(--main-color);
+  /* font-family: Fira Sans; */
+  font-size: 16px;
+  /* font-style: normal; */
+  /* font-weight: 400; */
+  line-height: 1.73; /* 27.68px */
+}
+
+/* --- Book now --- */
+
+.book-now-head {
+  color: var(--neutral-color-two);
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 36px;
+  /* font-style: normal; */
+  font-weight: 900;
+  line-height: 1.33; /* 47.88px */
+}
+
+.book-now-desc {
+  color: #3b322d;
+  text-align: center;
+  /* font-family: Fira Sans; */
+  font-size: 21px;
+  font-style: normal;
+  /* font-weight: 400; */
+  line-height: 1.43; /* 30.03px */
+}
+
+/* --- Footer --- */
+.footer-head {
+  color: var(--neutral-color);
+  /* font-family: Fira Sans; */
+  font-size: 48px;
+  /* font-style: normal; */
+  font-weight: 700;
+  line-height: 1.25; /* 60px */
+}
+.address-list {
+  /* color: var(--neutral-color); */
+  /* 21px, Regular */
+  /* font-family: Montserrat; */
+  font-size: 21px;
+  font-style: normal;
+  /* font-weight: 400; */
+  line-height: 1.43; /* 30.03px */
+}
+
+.footer-timetable {
+  /* color: var(--neutral-color); */
+  /* 21px, Regular */
+  /* font-family: Montserrat; */
+  font-size: 21px;
+  font-style: normal;
+  /* font-weight: 400; */
+  line-height: 1.43; /* 30.03px */
 }
