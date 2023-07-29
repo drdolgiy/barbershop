@@ -44,8 +44,11 @@ body {
 .container {
   width: 1200px;
   padding: 0 10px 0 10px;
-
   margin: 0 auto;
+}
+
+.section {
+  padding: 120px 0;
 }
 
 /* ---- Header ----- */
@@ -129,6 +132,8 @@ body {
 }
 
 .hero-item {
+  display: flex;
+  background-image: ;
 }
 
 .main-title {
@@ -148,12 +153,20 @@ body {
 }
 
 .hero-btn {
+  padding: 25px 51px;
+  border: none;
   /* color: var(--neutral-1, #fff); */
+  background: linear-gradient(
+    90deg,
+    rgba(33, 24, 20, 0.57) 0%,
+    rgba(38, 28, 24, 0.42) 100%
+  );
   text-align: center;
   font-family: Playfair Display, serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.52;
+  cursor: pointer;
 }
 
 .hero-btn:hover,
@@ -256,9 +269,11 @@ body {
 
 /* --- Testimonials --- */
 .testimonials-section {
+  background: #3b322d;
 }
 
 .testimonials-section-header {
+  margin-bottom: 24px;
   /* color: var(--neutral-color); */
   text-align: center;
   /* font-family: Fira Sans; */
@@ -269,6 +284,7 @@ body {
 }
 
 .testimonials-section-desc {
+  margin-bottom: 50px;
   color: var(--main-color);
   text-align: center;
   /* font-family: Fira Sans; */
@@ -279,6 +295,7 @@ body {
 }
 
 .testimonials-section-list {
+  display: flex;
 }
 .testimonials-section-list-item {
 }
@@ -312,6 +329,7 @@ body {
 
 /* --- Our price --- */
 .our-price-section {
+  background: #251d1a;
 }
 
 .our-price-section-header {
@@ -335,6 +353,7 @@ body {
 }
 
 .our-price-section-list {
+  display: flex;
 }
 
 .ur-price-section-list-item {
@@ -353,6 +372,7 @@ body {
 }
 
 .price-list {
+  /* display: flex; */
 }
 
 .price-list-item {
