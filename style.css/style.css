@@ -59,6 +59,7 @@ body {
 
 .header {
   /* display: flex; */
+  background-color: #3b322d;
   padding: 35px 0 35px 0;
 }
 
@@ -85,7 +86,7 @@ body {
 
   line-height: 1.33;
   /* letter-spacing: 0.1; */
-  /* color: #efe7e2; */
+  color: var(--main-color);
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -109,11 +110,12 @@ body {
   /* font-weight: 400; */
   line-height: 1.33;
   /* letter-spacing: 0.1; */
-  /* color: #efe7e2; */
+  color: var(--main-color);
   margin-right: 92px;
 }
 
 .tel-link {
+  color: var(--main-color);
   /* font-family: "Fira Sans", sans-serif; */
   font-size: 18px;
   /* font-weight: 400; */
@@ -121,6 +123,7 @@ body {
 }
 
 .timetable {
+  color: var(--main-color);
   /* font-family: "Fira Sans", sans-serif; */
   font-size: 14px;
   /* font-weight: 400; */
@@ -129,11 +132,13 @@ body {
 
 /* ----- Hero ------- */
 .hero {
+  background-color: #3b322d;
+  /* width: 750px; */
 }
 
 .hero-item {
   display: flex;
-  background-image: ;
+  /* background-image: ; */
 }
 
 .main-title {
@@ -177,15 +182,15 @@ body {
 
 /* ---- Benefits ----- */
 
-/* .benefits-section {
-  display: flex;
-} */
+.benefits-section {
+  background: #251d1a;
+  padding: 350px 0 125px 0;
+}
 
 .benefits-list {
   display: flex;
   /* flex-direction: column; */
   justify-content: space-evenly;
-  margin-bottom: 125px;
 }
 
 .benefits-section-list-item {
@@ -219,11 +224,13 @@ body {
 
 /* --- About us --- */
 .about-us-section {
+  background-color: #3b322d;
 }
 
 .about-us-section-title {
-  /* color: var(--neutral-color); */
-  color: var(--main-color);
+  margin-bottom: 12px;
+  color: var(--neutral-color);
+  /* color: var(--main-color); */
   text-align: center;
   /* font-family: Fira Sans; */
   font-size: 48px;
@@ -233,6 +240,10 @@ body {
 }
 
 .about-us-section-desc {
+  width: 580px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 60px;
   color: var(--main-color);
   text-align: center;
   /* font-family: Fira Sans; */
@@ -280,18 +291,16 @@ body {
 
 /* --- Testimonials --- */
 .testimonials-section {
-  background: #3b322d;
+  background-color: #3b322d;
 }
 
 .testimonials-section-header {
   margin-bottom: 24px;
-  /* color: var(--neutral-color); */
+  color: var(--neutral-color);
   text-align: center;
-  /* font-family: Fira Sans; */
   font-size: 48px;
-  /* font-style: normal; */
   font-weight: 700;
-  line-height: 1.25; /* 60px */
+  line-height: 1.25;
 }
 
 .testimonials-section-desc {
@@ -307,31 +316,38 @@ body {
 
 .testimonials-section-list {
   display: flex;
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+  /* margin-left: -20px;
+  margin-top: -24px; */
 }
+
 .testimonials-section-list-item {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* flex-basis: calc((100% -20px) / 3); */
 }
 
 .testimonials-item-header {
   color: var(--neutral-color);
-  /* font-family: Fira Sans; */
+  /* text-align: center; */
   font-size: 14px;
-  /* font-style: normal; */
   font-weight: 700;
-  line-height: 1.5; /* 21px */
+  line-height: 1.5;
 }
 
 .testimonials-item-desc {
   /* color: var(--neutral-color); */
-  /* font-family: Fira Sans; */
+  /* text-align: center; */
   font-size: 16px;
-  /* font-style: normal; */
-  /* font-weight: 400; */
-  line-height: 1.5; /* 24px */
+  line-height: 1.5;
 }
 
 .testimonials-item-full-desc {
   color: var(--accent-color);
   /* font-family: Fira Sans; */
+  /* text-align: center; */
+
   font-size: 14px;
   /* font-style: normal; */
   /* font-weight: 400; */
@@ -345,7 +361,7 @@ body {
 
 .our-price-section-header {
   margin-bottom: 24px;
-  color: var(--neutral);
+  color: var(--main-color);
   text-align: center;
   /* font-family: Fira Sans; */
   font-size: 48px;
@@ -356,6 +372,7 @@ body {
 
 .our-price-section-desc {
   margin-bottom: 62px;
+
   color: var(--main-color);
   text-align: center;
   /* font-family: Fira Sans; */
@@ -367,7 +384,9 @@ body {
 
 .our-price-section-list {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* justify-content: space-evenly; */
 }
 
 .our-price-section-list {
@@ -375,7 +394,8 @@ body {
   /* margin-right: 20px; */
 }
 
-.ur-price-section-list-item {
+.our-price-section-list-item {
+  flex-basis: calc((100% - 30px) / 5);
 }
 
 .our-price-section-img {
