@@ -181,7 +181,18 @@ body {
   display: flex;
 } */
 
+.benefits-list {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  margin-bottom: 125px;
+}
+
 .benefits-section-list-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* text-align: left; */
 }
 
 .benefits-img {
@@ -333,6 +344,7 @@ body {
 }
 
 .our-price-section-header {
+  margin-bottom: 24px;
   color: var(--neutral);
   text-align: center;
   /* font-family: Fira Sans; */
@@ -343,6 +355,7 @@ body {
 }
 
 .our-price-section-desc {
+  margin-bottom: 62px;
   color: var(--main-color);
   text-align: center;
   /* font-family: Fira Sans; */
@@ -354,6 +367,12 @@ body {
 
 .our-price-section-list {
   display: flex;
+  justify-content: space-evenly;
+}
+
+.our-price-section-list {
+  /* display: flex; */
+  /* margin-right: 20px; */
 }
 
 .ur-price-section-list-item {
@@ -369,10 +388,6 @@ body {
   /* font-style: normal; */
   font-weight: 500;
   line-height: 1.33; /* 39.9px */
-}
-
-.price-list {
-  /* display: flex; */
 }
 
 .price-list-item {
