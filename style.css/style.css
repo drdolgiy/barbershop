@@ -13,12 +13,13 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 ul,
 ol {
+  /* margin-right: 0; */
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -26,6 +27,7 @@ ol {
 
 img {
   display: block;
+  /* margin: 0px; */
 }
 
 .link {
@@ -189,37 +191,39 @@ body {
 
 .benefits-list {
   display: flex;
-  /* flex-direction: column; */
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  gap: 10px;
 }
 
 .benefits-section-list-item {
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* text-align: left; */
+  align-content: center;
+  flex-basis: calc((100% - 20px) / 3);
+  text-align: center;
 }
 
 .benefits-img {
+  margin-bottom: 24px;
 }
+
 .benefits-item-head {
-  color: var (--main-color);
+  margin-bottom: 10px;
+  color: var(--main-color);
   text-align: center;
-  /* font-family: Fira Sans; */
   font-size: 24px;
-  /* font-style: normal; */
   font-weight: 600;
-  line-height: 1.35; /* 32.4px */
+  line-height: 1.35;
 }
 
 .benefits-item-desc {
+  /* padding: 0 14px; */
   color: var(--second-color);
   text-align: center;
-  /* font-family: Fira Sans; */
   font-size: 16px;
-  /* font-style: normal; */
-  /* font-weight: 400; */
-  line-height: 1.5; /* 24px */
+  line-height: 1.5;
 }
 
 /* --- About us --- */
@@ -246,11 +250,8 @@ body {
   margin-bottom: 60px;
   color: var(--main-color);
   text-align: center;
-  /* font-family: Fira Sans; */
   font-size: 15px;
-  /* font-style: normal; */
-  /* font-weight: 400; */
-  line-height: 1.6; /* 24px */
+  line-height: 1.6;
 }
 
 .gallery-btn {
@@ -307,51 +308,46 @@ body {
   margin-bottom: 50px;
   color: var(--main-color);
   text-align: center;
-  /* font-family: Fira Sans; */
   font-size: 15px;
-  /* font-style: normal; */
-  /* font-weight: 400; */
-  line-height: 1.6; /* 24px */
+  line-height: 1.6;
 }
 
 .testimonials-section-list {
   display: flex;
-  /* flex-wrap: wrap; */
-  /* align-items: center; */
-  /* margin-left: -20px;
-  margin-top: -24px; */
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .testimonials-section-list-item {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* flex-basis: calc((100% -20px) / 3); */
+  flex-basis: calc((100% - 20px) / 5);
+}
+
+.testimonials-section-img {
+  margin-bottom: 24px;
 }
 
 .testimonials-item-header {
+  margin-bottom: 24px;
   color: var(--neutral-color);
-  /* text-align: center; */
+  text-align: left;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.5;
 }
 
 .testimonials-item-desc {
-  /* color: var(--neutral-color); */
-  /* text-align: center; */
+  margin-bottom: 24px;
+  color: var(--neutral-color);
+  text-align: left;
   font-size: 16px;
   line-height: 1.5;
 }
 
 .testimonials-item-full-desc {
   color: var(--accent-color);
-  /* font-family: Fira Sans; */
-  /* text-align: center; */
-
+  text-align: left;
   font-size: 14px;
-  /* font-style: normal; */
-  /* font-weight: 400; */
-  line-height: 1.35; /* 18.9px */
+  line-height: 1.35;
 }
 
 /* --- Our price --- */
@@ -387,11 +383,6 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   /* justify-content: space-evenly; */
-}
-
-.our-price-section-list {
-  /* display: flex; */
-  /* margin-right: 20px; */
 }
 
 .our-price-section-list-item {
