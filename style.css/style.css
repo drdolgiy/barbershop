@@ -112,25 +112,52 @@ logo-icon:focus {
 }
 
 .map-link {
+  display: flex;
+  flex-direction: column;
   font-size: 14px;
   line-height: 1.33;
   color: var(--main-color);
   margin-right: 15px;
 }
 
-.map-item {
-  display: flex;
-}
-
-.icon-map-header {
-  width: 18px;
-  height: 18px;
-  /* fill: #3b322d; */
-}
-
 .map-link:hover,
 .map-link:focus {
   color: var(--accent-color);
+}
+
+.map-item {
+  display: flex;
+  /* align-items: center; */
+  margin-right: 42px;
+}
+
+.icon-map {
+  width: 18px;
+  height: 18px;
+  fill: #3b322d;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+
+.tel-item {
+  display: flex;
+  align-items: center;
+}
+
+.tel-wrapper {
+  text-align: right;
+}
+
+.tel-wrapper:not(:last-child) {
+  margin-right: 15px;
 }
 
 .tel-link {
@@ -141,6 +168,12 @@ logo-icon:focus {
 .tel-link:hover,
 .tel-link:focus {
   color: var(--accent-color);
+}
+
+.icon-tel {
+  width: 18px;
+  height: 18px;
+  fill: #3b322d;
 }
 
 .timetable {
@@ -162,6 +195,7 @@ logo-icon:focus {
       rgba(38, 28, 24, 0.42) 100%
     ),
     url("../images/hero/bg.jpg");
+  background-color: #3b322d;
   background-size: cover;
   background-repeat: no-repeat;
   height: 1000px;
@@ -181,6 +215,25 @@ logo-icon:focus {
   font-size: 70px;
   font-weight: 900;
   line-height: 1.1;
+}
+
+.hero-desc-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-desc {
+  padding: 10px 25px;
+  margin-bottom: 29px;
+  color: var(--neutral-1, #fff);
+  font-family: Playfair Display;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 1.4px;
+  border: 1px solid #fff;
 }
 
 .desc {
@@ -264,6 +317,21 @@ logo-icon:focus {
   background-color: #3b322d;
 }
 
+.gallery-left {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+}
+
+.gallery-right {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* .gallery-list {
+  display: flex;
+  flex-direction: column;
+} */
+
 .about-us-section-title {
   margin-bottom: 12px;
   color: var(--neutral-color);
@@ -287,15 +355,25 @@ logo-icon:focus {
   line-height: 1.6;
 }
 
+.btn-list {
+  display: flex;
+}
+
+.btn-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .gallery-btn {
-  /* color: var(--main-color); */
-  /* background-color: var(--accent-color); */
+  height: 68px;
+  padding: 0 50px;
+  border: 1px solid #b7aaa2;
+  color: var(--main-color);
+  background-color: #3b322d;
   text-align: center;
   font-family: Playfair Display;
   font-size: 20px;
-  /* font-style: normal; */
   font-weight: 700;
-  line-height: 1.52; /* 30.4px */
+  line-height: 1.52;
 }
 
 .gallery-btn:hover,
@@ -305,16 +383,18 @@ logo-icon:focus {
 }
 
 .gallery-btn-instagram {
-  /* color: var(--main-color); */
-  /* background-color: var(--accent-color); */
+  height: 68px;
+  padding: 0 40px;
+  border: 1px solid #b7aaa2;
+  color: var(--main-color);
+  background-color: #3b322d;
   text-align: center;
   font-family: Playfair Display;
   font-size: 14px;
-  /* font-style: normal; */
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  line-height: 1.5; /* 30.4px */
+  line-height: 1.5;
 }
 
 .gallery-btn-instagram:hover,
@@ -467,7 +547,7 @@ logo-icon:focus {
 
 /* --- Footer --- */
 .footer-head {
-  color: var(--neutral-color);
+  /* color: var(--neutral-color); */
   /* font-family: Fira Sans; */
   font-size: 48px;
   /* font-style: normal; */
@@ -482,6 +562,23 @@ logo-icon:focus {
   font-style: normal;
   /* font-weight: 400; */
   line-height: 1.43; /* 30.03px */
+}
+
+.footer-tel-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+
+.footer-tel-icon {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  fill: #251d1a;
 }
 
 .footer-timetable {

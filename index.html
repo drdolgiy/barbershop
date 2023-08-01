@@ -48,14 +48,27 @@
     </nav>
     <ul class="header-contacts">
         <li class="map-item list">
-            <a class="map-link link" href="">302W 50th St, <br> NY, NY 10019</a>
-            <svg class="icon-map-header">
-                <use href="./images/svg/sprite.svg#icon-map"></use>
-            </svg>
+            <a class="map-link link" href="https://goo.gl/maps/1oMf7YhaLydyHifj8" target="_blank" rel="noopener noreferrer"> 
+                <span>302W 50th St,</span> 
+                <span>NY, NY 10019</span>  
+            </a>
+            <div class="icon-wrapper">
+                <svg class="icon-map">
+                    <use href="./images/svg/sprite.svg#icon-map"></use>
+                </svg>
+            </div>
         </li>
         <li class="tel-item list">
+            <div class="tel-wrapper">
             <a class="tel-link link" href="tel: 0123456789">0123456789</a>
             <p class="timetable">Daily from 9 to 20</p>
+            </div>
+
+            <div class="icon-wrapper">
+                <svg class="icon-tel">
+                    <use href="./images/svg/sprite.svg#icon-phone"></use>
+                </svg>
+            </div>
         </li>
     </ul>
     </div>
@@ -69,7 +82,8 @@
                 <li>
                     <h1 class="main-title">Men's Barbershop in The Middle East</h1>
                 </li>
-                <li>
+                <li class="hero-desc-list">
+                    <p class="title-desc">The highest rated</p>
                     <p class="desc">Text that is placed at the bottom of the heading to reveal details</p>
                 </li>
             </ul>
@@ -109,39 +123,50 @@
     <!-- About us -->
 
     <section class="about-us-section section">
-        <h2 class="about-us-section-title">About Us</h2>
-        <p class="about-us-section-desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet 
-            sint. Velit officia consequat duis enim velit
-        mollit. Exercitation veniam consequat sunt nostrud amet.
-         Amet minim mollit non deserunt
-        </p>
-        <ul class="gallery list">
-            <li class="gallery-list">
-                <img class="gallery-img" src="./images/about-us/photo.jpg" alt="haircut" width="580" height="337">
-            </li>
-            <li>
-                <img src="./images/about-us/photo (1).jpg" alt="beardtrim" width="280" height="280">
-                <img src="./images/about-us/photo (2).jpg" alt="headtrim" width="280" height="280">
-            </li>
-            <li>
-                <img src="./images/about-us/photo (3).jpg" alt="scissors" width="280" height="280">
-                <img src="./images/about-us/photo (4).jpg" alt="razors" width="280" height="280">
-            </li>
-            <li>
-                <img src="./images/about-us/photo (5).jpg" alt="barbershop" width="580" height="337">
-            </li>
-        </ul>
-        <button class="gallery-btn" type="button">
-            <!-- <a class="gallery-link link" href=""> -->
-                Our masters and their masterpieces
-            <!-- </a> -->
-        </button>
-        <button class="gallery-btn-instagram" type="button">
-            <!-- <a class="gallery-instagram-link link" href=""> -->
-                Our Instagram
-            <!-- </a> -->
-        </button>
+        <div class="container">
+            <h2 class="about-us-section-title">About Us</h2>
+            <p class="about-us-section-desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                sint. Velit officia consequat duis enim velit
+                mollit. Exercitation veniam consequat sunt nostrud amet.
+                Amet minim mollit non deserunt
+            </p>
+            <ul class="gallery-left list">
+                <li class="gallery-list">
+                    <img class="gallery-img" src="./images/about-us/photo.jpg" alt="haircut" width="580" height="337">
+                </li>
+                <li>
+                    <img src="./images/about-us/photo (1).jpg" alt="beardtrim" width="280" height="280">
+                    <img src="./images/about-us/photo (2).jpg" alt="headtrim" width="280" height="280">
+                </li>
+            </ul> 
+            <ul class="gallery-right list">   
+                <li>
+                    <img src="./images/about-us/photo (3).jpg" alt="scissors" width="280" height="280">
+                    <img src="./images/about-us/photo (4).jpg" alt="razors" width="280" height="280">
+                </li>
+                <li>
+                    <img src="./images/about-us/photo (5).jpg" alt="barbershop" width="580" height="337">
+                </li>
+            </ul>
+            <ul class="btn-list list">
+                 <li class="btn-item"> 
+                    <button class="gallery-btn" type="button">
+                    <!-- <a class="gallery-link link" href=""> -->
+                    Our masters and their masterpieces
+                    <!-- </a> -->
+                    </button>
+                </li>
+                <li class="btn-item"> 
+                    <button class="gallery-btn-instagram" type="button">
+                    <!-- <a class="gallery-instagram-link link" href=""> -->
+                    Our Instagram
+                    <!-- </a> -->
+                    </button>
+                </li>
+            </ul>
+   
 
+        </div>
     </section>
 
     <!-- Testimonials -->
@@ -260,28 +285,32 @@
     </section>
 
 </main>
-<footer class="footer">
-    <h2 class="footer-head">Contacts</h2>
-    <address class="address">
-        <ul class="address-list list">
-            <li>
-                <img src="./images/footer/phone54x54.svg" alt="phone" width="54" height="54">
-                <a class="footer-tel link" href="tel: +380633548899">+380633548899</a>
-            </li>
-            <li>
-                <img src="./images/footer/email.svg" alt="email" width="54" height="54">
-                <a class="footer-mail link" href="mailto:info@sitename.com">info@sitename.com</a>
-            </li>
-            <li>
-                <img src="./images/footer/map.svg" alt="map" width="54" height="54">
-                <a class="footer-map link" href="https://goo.gl/maps/1oMf7YhaLydyHifj8" target="_blank" rel="noopener noreferrer">302 W 50th St, NY, NY
-                    10019</a>
-            </li>
-        </ul>
-    </address>
+<footer class="footer section">
+    <div class="container">
+        <h2 class="footer-head">Contacts</h2>
+        <address class="address">
+            <ul class="address-list list">
+                <li class="footer-tel-link">
+                    <svg class="footer-tel-icon">
+                        <use href="./images/svg/sprite.svg#icon-phone"></use>
+                    </svg>
+                    <a class="footer-tel link" href="tel: +380633548899">+380633548899</a>
+                </li>
+                <li>
+                    <img src="./images/footer/email.svg" alt="email" width="54" height="54">
+                    <a class="footer-mail link" href="mailto:info@sitename.com">info@sitename.com</a>
+                </li>
+                <li>
+                    <img src="./images/footer/map.svg" alt="map" width="54" height="54">
+                    <a class="footer-map link" href="https://goo.gl/maps/1oMf7YhaLydyHifj8" target="_blank"
+                        rel="noopener noreferrer">302 W 50th St, NY, NY
+                        10019</a>
+                </li>
+            </ul>
+        </address>
         <img src="./images/footer/clock.svg" alt="clock" width="54" height="54">
         <p class="footer-timetable">Daily from 9 to 20</p>
-
+    </div>
 </footer>
 </body>
 </html>
