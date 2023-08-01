@@ -134,17 +134,37 @@ body {
 
 /* ----- Hero ------- */
 .hero {
+  background-image: linear-gradient(#3b322d 0% 75%, #251d1a 75% 100%);
   background-color: #3b322d;
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  height: 1000px; */
   /* width: 750px; */
+}
+
+.hero-image {
+  background-image: linear-gradient(
+      90deg,
+      rgba(33, 24, 20, 0.57) 0%,
+      rgba(38, 28, 24, 0.42) 100%
+    ),
+    url("../images/hero/bg.jpg");
+  /* background-color: #3b322d; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1000px;
 }
 
 .hero-item {
   display: flex;
+  align-items: end;
   /* background-image: ; */
 }
 
 .main-title {
-  /* color: var(--neutral-1, #FFF); */
+  margin-top: 40px;
+  margin-left: 60px;
+  color: var(--neutral-1, #fff);
   font-family: Playfair Display, serif;
   font-size: 70px;
   font-weight: 900;
@@ -152,22 +172,21 @@ body {
 }
 
 .desc {
-  /* color: #EFE7E2; */
+  color: var(--neutral-1, #fff);
   font-family: Fira Sans, sans-serif;
+  text-align: left;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
 }
 
 .hero-btn {
+  margin-left: 62px;
+  margin-top: 678px;
   padding: 25px 51px;
   border: none;
-  /* color: var(--neutral-1, #fff); */
-  background: linear-gradient(
-    90deg,
-    rgba(33, 24, 20, 0.57) 0%,
-    rgba(38, 28, 24, 0.42) 100%
-  );
+  color: var(--neutral-1, #fff);
+  background-color: var(--accent-color);
   text-align: center;
   font-family: Playfair Display, serif;
   font-size: 20px;
@@ -178,7 +197,7 @@ body {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: var(--accent-color);
+  background-color: var(--neutral-color-two);
   color: var(--neutral-color);
 }
 
@@ -186,7 +205,7 @@ body {
 
 .benefits-section {
   background: #251d1a;
-  padding: 350px 0 125px 0;
+  padding: 100px 0 125px 0;
 }
 
 .benefits-list {
