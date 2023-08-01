@@ -131,12 +131,6 @@ logo-icon:focus {
   margin-right: 42px;
 }
 
-.icon-map {
-  width: 18px;
-  height: 18px;
-  fill: #3b322d;
-}
-
 .icon-wrapper {
   display: flex;
   justify-content: center;
@@ -145,6 +139,12 @@ logo-icon:focus {
   height: 36px;
   border-radius: 50%;
   background-color: var(--accent-color);
+}
+
+.icon-map {
+  width: 18px;
+  height: 18px;
+  fill: #3b322d;
 }
 
 .tel-item {
@@ -464,6 +464,7 @@ logo-icon:focus {
 }
 
 /* --- Our price --- */
+
 .our-price-section {
   background: #251d1a;
 }
@@ -546,25 +547,71 @@ logo-icon:focus {
 }
 
 /* --- Footer --- */
-.footer-head {
-  /* color: var(--neutral-color); */
-  /* font-family: Fira Sans; */
-  font-size: 48px;
-  /* font-style: normal; */
-  font-weight: 700;
-  line-height: 1.25; /* 60px */
-}
-.address-list {
-  /* color: var(--neutral-color); */
-  /* 21px, Regular */
-  /* font-family: Montserrat; */
-  font-size: 21px;
-  font-style: normal;
-  /* font-weight: 400; */
-  line-height: 1.43; /* 30.03px */
+
+.footer {
+  height: 650px;
+  background-image: url("../images/footer/map.jpg");
+  /* background: #251d1a; */
 }
 
-.footer-tel-link {
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  /* width: 480px; */
+  /* margin-left: 0; */
+  padding: 65px 38px 80px 57px;
+  background: #251d1a;
+}
+
+.footer-head {
+  margin-bottom: 34px;
+  color: var(--neutral-color);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.address-list {
+  font-size: 21px;
+  font-style: normal;
+  line-height: 1.43;
+}
+
+.address-list:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+}
+
+.footer-link:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.footer-contacts {
+  color: var(--neutral-color);
+  font-size: 21px;
+  line-height: 1.43;
+}
+
+.footer-tel:hover,
+.footer-tel:focus {
+  color: var(--accent-color);
+}
+
+.footer-mail:hover,
+.footer-mail:focus {
+  color: var(--accent-color);
+}
+
+.footer-map:hover,
+.footer-map:focus {
+  color: var(--accent-color);
+}
+
+.footer-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -574,19 +621,12 @@ logo-icon:focus {
   background-color: var(--accent-color);
 }
 
-.footer-tel-icon {
-  display: flex;
-  width: 16px;
-  height: 16px;
-  fill: #251d1a;
+.footer-wrapper:not(:last-child) {
+  margin-right: 30px;
 }
 
-.footer-timetable {
-  /* color: var(--neutral-color); */
-  /* 21px, Regular */
-  /* font-family: Montserrat; */
-  font-size: 21px;
-  font-style: normal;
-  /* font-weight: 400; */
-  line-height: 1.43; /* 30.03px */
+.footer-icon {
+  width: 22px;
+  height: 22px;
+  fill: #251d1a;
 }
