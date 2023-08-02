@@ -19,7 +19,6 @@ p {
 
 ul,
 ol {
-  /* margin-right: 0; */
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -27,7 +26,6 @@ ol {
 
 img {
   display: block;
-  /* margin: 0px; */
 }
 
 .link {
@@ -41,6 +39,7 @@ img {
 body {
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
+  margin: 0;
 }
 
 .container {
@@ -335,13 +334,10 @@ logo-icon:focus {
 .about-us-section-title {
   margin-bottom: 12px;
   color: var(--neutral-color);
-  /* color: var(--main-color); */
   text-align: center;
-  /* font-family: Fira Sans; */
   font-size: 48px;
-  /* font-style: normal; */
   font-weight: 700;
-  line-height: 1.25; /* 60px */
+  line-height: 1.25;
 }
 
 .about-us-section-desc {
@@ -463,7 +459,7 @@ logo-icon:focus {
   line-height: 1.35;
 }
 
-/* --- Our price --- */
+/* ------------- Our price ------------- */
 
 .our-price-section {
   background: #251d1a;
@@ -473,30 +469,51 @@ logo-icon:focus {
   margin-bottom: 24px;
   color: var(--main-color);
   text-align: center;
-  /* font-family: Fira Sans; */
   font-size: 48px;
-  /* font-style: normal; */
   font-weight: 700;
-  line-height: 1.25; /* 60px */
+  line-height: 1.25;
+}
+
+.price-list {
+  /* display: flex; */
+  /* content: ""; */
+  /* width: 1px;
+  height: 216px; */
+  /* margin-left: 15px; */
+  border-right: 1px solid #b7aaa2;
 }
 
 .our-price-section-desc {
   margin-bottom: 62px;
-
   color: var(--main-color);
   text-align: center;
-  /* font-family: Fira Sans; */
   font-size: 15px;
-  /* font-style: normal; */
-  /* font-weight: 400; */
-  line-height: 1.6; /* 24px */
+  line-height: 1.6;
 }
 
 .our-price-section-list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  /* justify-content: space-evenly; */
+}
+
+.price-list-desc {
+  color: #efe7e2;
+  font-size: 16px;
+  line-height: 1.73;
+}
+
+.price-list-desc-1 {
+  /* margin-right: 15px; */
+  color: #efe7e2;
+  font-size: 14px;
+  line-height: 1.73;
+}
+
+.price-list-desc-2 {
+  color: #efe7e2;
+  font-size: 16px;
+  line-height: 1.73;
 }
 
 .our-price-section-list-item {
@@ -504,46 +521,46 @@ logo-icon:focus {
 }
 
 .our-price-section-img {
+  margin-bottom: 20px;
 }
 
 .price-list-head {
+  margin-bottom: 20px;
   color: var(--main-color);
-  /* font-family: Fira Sans; */
   font-size: 30px;
-  /* font-style: normal; */
   font-weight: 500;
-  line-height: 1.33; /* 39.9px */
+  line-height: 1.33;
 }
 
 .price-list-item {
+  display: flex;
+  justify-content: space-between;
   color: var(--main-color);
-  /* font-family: Fira Sans; */
   font-size: 16px;
-  /* font-style: normal; */
-  /* font-weight: 400; */
-  line-height: 1.73; /* 27.68px */
+  line-height: 1.73;
 }
 
-/* --- Book now --- */
+.price-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/* --------------- Book now --------------- */
 
 .book-now-head {
   color: var(--neutral-color-two);
   text-align: center;
   font-family: Playfair Display;
   font-size: 36px;
-  /* font-style: normal; */
   font-weight: 900;
-  line-height: 1.33; /* 47.88px */
+  line-height: 1.33;
 }
 
 .book-now-desc {
   color: #3b322d;
   text-align: center;
-  /* font-family: Fira Sans; */
   font-size: 21px;
   font-style: normal;
-  /* font-weight: 400; */
-  line-height: 1.43; /* 30.03px */
+  line-height: 1.43;
 }
 
 /* --- Footer --- */
@@ -557,8 +574,6 @@ logo-icon:focus {
 .contacts-container {
   display: flex;
   flex-direction: column;
-  /* width: 480px; */
-  /* margin-left: 0; */
   padding: 65px 38px 80px 57px;
   background: #251d1a;
 }
