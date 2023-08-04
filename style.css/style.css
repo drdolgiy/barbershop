@@ -594,7 +594,7 @@ logo-icon:focus {
 /* --- Footer --- */
 
 .footer {
-  background-color: #3b322d;
+  /* background-color: #3b322d; */
   background-image: url("../images/footer/map.jpg");
   background-repeat: no-repeat;
   padding-top: 60px;
