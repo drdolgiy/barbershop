@@ -574,7 +574,17 @@ logo-icon:focus {
 
 /* --------------- Book now --------------- */
 
+.book-now-section {
+  background-image: linear-gradient(#251d1a 0% 75%, #3b322d 75% 100%);
+  /* padding-bottom: 70px; */
+}
+
+.bg-color {
+  background-color: var(--accent-color);
+}
+
 .book-now-head {
+  margin-bottom: 12px;
   color: var(--neutral-color-two);
   text-align: center;
   font-family: Playfair Display;
@@ -584,11 +594,44 @@ logo-icon:focus {
 }
 
 .book-now-desc {
+  margin-bottom: 35px;
   color: #3b322d;
   text-align: center;
   font-size: 21px;
   font-style: normal;
   line-height: 1.43;
+}
+
+.book-now-form {
+  display: flex;
+  justify-content: center;
+}
+
+.book-now-tel {
+  margin-right: 20px;
+}
+
+.book-now-email {
+  margin-right: 20px;
+}
+
+.book-now-btn {
+  padding: 25px 51px;
+  color: var(--neutral-1, #fff);
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.52%;
+  align-items: center;
+  background-color: #000;
+  border-style: none;
+  cursor: pointer;
+}
+
+.book-now-btn:hover,
+.book-now-btn:focus {
+  color: var(--accent-color);
 }
 
 /* --- Footer --- */
