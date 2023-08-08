@@ -639,7 +639,35 @@ logo-icon:focus {
   justify-content: center;
   color: var(--main-color);
   font-size: 13px;
-  line-height: 1.34;
+  line-height: 1.35;
+}
+
+.checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.label-checkbox {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.checkbox-icon {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #000;
+  margin-right: 5px;
+}
+
+.checkbox:checked + .checkbox-icon {
+  border-color: #000;
+  background-color: #000;
+  background-image: url("../images/svg/icon.svg");
+  background-size: cover;
+  border: 2px solid #000;
 }
 
 .checkbox-link {
@@ -665,7 +693,7 @@ logo-icon:focus {
   color: var(--accent-color);
 }
 
-/* --- Footer --- */
+/* ---------- Footer ---------- */
 
 .footer {
   padding-top: 120px;
