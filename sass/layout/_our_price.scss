@@ -70,8 +70,8 @@
   color: var(--main-color);
   font-size: 16px;
   line-height: 1.73;
-}
 
-.price-list-item:not(:last-child) {
-  margin-bottom: 20px;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }

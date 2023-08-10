@@ -21,11 +21,11 @@
   width: 45px;
   height: 45px;
   fill: var(--main-color);
-}
 
-.logo-icon:hover,
-.logo-icon:focus {
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .menu {
@@ -42,11 +42,11 @@
   line-height: 1.33;
   color: var(--main-color);
   text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
 
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .header-contacts {
@@ -62,11 +62,11 @@
   line-height: 1.33;
   color: var(--main-color);
   margin-right: 15px;
-}
 
-.map-link:hover,
-.map-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .map-item {
@@ -97,20 +97,21 @@
 
 .tel-wrapper {
   text-align: right;
-}
 
-.tel-wrapper:not(:last-child) {
-  margin-right: 15px;
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
 }
 
 .tel-link {
   color: var(--main-color);
   font-size: 18px;
   line-height: 1.52;
-}
-.tel-link:hover,
-.tel-link:focus {
-  color: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .icon-tel {
