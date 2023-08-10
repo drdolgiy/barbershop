@@ -1,0 +1,122 @@
+.book-now-section {
+  background-image: linear-gradient(#251d1a 0% 75%, #3b322d 75% 100%);
+}
+
+.bg-color {
+  background-color: var(--accent-color);
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.book-now-head {
+  margin-bottom: 12px;
+  color: var(--neutral-color-two);
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.33;
+}
+
+.book-now-desc {
+  margin-bottom: 35px;
+  color: #3b322d;
+  text-align: center;
+  font-size: 21px;
+  font-style: normal;
+  line-height: 1.43;
+}
+
+.book-now-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.book-now-tel {
+  margin-right: 20px;
+  padding: 22px 170px 22px 22px;
+  border: 1px solid var(--neutral-color-two);
+  background-color: var(--accent-color);
+  color: var(--neutral-color);
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.book-now-tel::placeholder {
+  color: var(--neutral-color);
+}
+
+.book-now-email::placeholder {
+  color: var(--neutral-color);
+}
+
+.book-now-email {
+  margin-right: 20px;
+  margin-right: 20px;
+  padding: 22px 260px 22px 22px;
+  color: var(--neutral-1, #fff);
+  border: 1px solid var(--neutral-color-two);
+  background-color: var(--accent-color);
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.form-checkbox {
+  display: flex;
+  justify-content: center;
+  color: var(--main-color);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.label-checkbox {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.checkbox-icon {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #000;
+  margin-right: 5px;
+}
+
+.checkbox:checked + .checkbox-icon {
+  border-color: #000;
+  background-color: #000;
+  background-image: url("../images/svg/icon.svg");
+  background-size: cover;
+  border: 2px solid #000;
+}
+
+.checkbox-link {
+  color: var(--main-color);
+}
+
+.book-now-btn {
+  padding: 25px 50px;
+  color: var(--neutral-1, #fff);
+  text-align: center;
+  font-family: Playfair Display;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.52;
+  align-items: center;
+  background-color: #000;
+  border-style: none;
+  cursor: pointer;
+}
+
+.book-now-btn:hover,
+.book-now-btn:focus {
+  color: var(--accent-color);
+}

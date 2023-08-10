@@ -1,0 +1,77 @@
+.our-price-section {
+  background: #251d1a;
+}
+
+.our-price-section-header {
+  margin-bottom: 24px;
+  color: var(--main-color);
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.price-list {
+  border-right: 1px solid #b7aaa2;
+}
+
+.our-price-section-desc {
+  margin-bottom: 62px;
+  color: var(--main-color);
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.our-price-section-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.price-list-desc {
+  color: #efe7e2;
+  font-size: 16px;
+  line-height: 1.73;
+}
+
+.price-list-desc-1 {
+  margin-right: 15px;
+  color: #efe7e2;
+  font-size: 14px;
+  line-height: 1.73;
+}
+
+.price-list-desc-2 {
+  color: #efe7e2;
+  font-size: 16px;
+  line-height: 1.73;
+}
+
+.our-price-section-list-item {
+  flex-basis: calc((100% - 30px) / 5);
+}
+
+.our-price-section-img {
+  margin-bottom: 20px;
+}
+
+.price-list-head {
+  margin-bottom: 20px;
+  color: var(--main-color);
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.33;
+}
+
+.price-list-item {
+  display: flex;
+  justify-content: space-between;
+  color: var(--main-color);
+  font-size: 16px;
+  line-height: 1.73;
+}
+
+.price-list-item:not(:last-child) {
+  margin-bottom: 20px;
+}
